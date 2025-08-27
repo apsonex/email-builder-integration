@@ -7,7 +7,7 @@
         "axios": "^1.11.0",
         "concurrently": "^9.2.1",
         "cors": "^2.8.5",
-        "dayjs": "^1.11.13",
+        "dayjs": "^1.11.14",
         "dot-object": "^2.1.5",
         "dotenv": "^16.6.1",
         "express": "^4.21.2",
@@ -23,6 +23,7 @@
         "p-series": "^3.0.0",
         "p-waterfall": "^3.0.0",
         "stream": "^0.0.3",
+        "undici": "^7.15.0",
       },
     },
   },
@@ -338,6 +339,8 @@
     "typedarray": ["typedarray@0.0.6", "", {}, "sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA=="],
 
     "undefsafe": ["undefsafe@2.0.5", "", {}, "sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA=="],
+
+    "undici": ["undici@7.15.0", "", {}, "sha512-7oZJCPvvMvTd0OlqWsIxTuItTpJBpU1tcbVl24FMn3xt3+VSunwUasmfPJRE57oNO1KsZ4PgA1xTdAX4hq8NyQ=="],
 
     "unpipe": ["unpipe@1.0.0", "", {}, "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ=="],
 

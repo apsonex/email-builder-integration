@@ -1,12 +1,6 @@
 #!/bin/bash
 
-PIDS1=$(lsof -i :3099 -t)
-
-for PID in $PIDS1; do
-  echo "Killing PID $PID"
-  kill -9 $PID
-done
-
+# Mock API server run at port 3088. Stop the previous server and run again.
 PIDS2=$(lsof -i :3088 -t)
 
 for PID in $PIDS2; do
@@ -14,10 +8,12 @@ for PID in $PIDS2; do
   kill -9 $PID
 done
 
-MOCK_CMD="(cd ../mockapi && bun run dev)"
-DEV_CMD="(cd bun run dev)"
+ONE="(zsh run-ai.sh)"
+TWO="(zsh run-mockapi.sh)"
+THREE="(zsh run-dev.sh)"
 
 # Run
-npx concurrently -n mock,vue -c green,blue \
-    "$AI_CMD" \
-    "$DEV_CMD"
+npx concurrently -n ai,mock,vue -c green,blue,magenta \
+    "$ONE" \
+    "$TWO" \
+    "$THREE"
