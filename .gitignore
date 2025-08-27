@@ -13,3 +13,5 @@
 **/vendor
 **/.npmrc
 **/publish.sh
+**/.env
+**/.env.production
