@@ -1,0 +1,3 @@
+# Get You token and replace with `<token>`
+@apsonex-email-builder:registry=https://npm-repos.emailbuilder.dev/
+//npm-repos.emailbuilder.dev/:_authToken=<token>
